@@ -40,7 +40,7 @@ class PyPlugin:
 		
 		try:
 			pluginAction = getattr(sys.modules['plugins.'+pluginName],'action')
-			pluginObject = getattr(sys.modules['plugins.'+pluginName],'plugin')
+			pluginObject = getattr(sys.modules['plugins.'+pluginName],pluginName)
 		except AttributeError:
 			return
 		

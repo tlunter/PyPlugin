@@ -7,4 +7,4 @@ class testPlugin:
 		print "Test!"
 		
 		
-plugin = testPlugin()
+testPlugin = testPlugin()
